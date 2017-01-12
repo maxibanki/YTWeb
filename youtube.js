@@ -1,6 +1,6 @@
 registerPlugin({
     name: 'Youtube Webinterface!',
-    version: '1.6',
+    version: '2.0',
     description: 'Youtube Webinterface for playing and downloading YouTube Tracks.',
     author: 'maxibanki <max@schmitt.ovh> & irgendwer <dev@sandstorm-projects.de>',
     backends: ['ts3', 'discord'],
@@ -236,10 +236,9 @@ registerPlugin({
         ytwebconfig.download = (config.dl != 1);
         ytwebconfig.ytapikey = store.get("ytapikey");
         return ytwebconfig;
-    });
-
+    })
+  
     String.prototype.startsWith = function(str) {
         return this.indexOf(str) == 0;
     }
-
 });
